@@ -1,0 +1,97 @@
+.chat-container {
+  width: 400px;
+  height: 600px;
+  border: 2px solid #333; /* Cambiado a un color más oscuro */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff; /* Fondo blanco para mayor contraste */
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+}
+
+.messages-container {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #f9f9f9; /* Fondo claro para mensajes */
+}
+
+.form {
+  display: flex;
+  border-top: 2px solid #333; /* Línea separadora más visible */
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #555; /* Color más oscuro para el borde */
+  outline: none;
+  font-size: 14px;
+  color: #333; /* Texto más oscuro */
+  background-color: #fff; /* Fondo blanco para alto contraste */
+}
+
+.input::placeholder {
+  color: #777; /* Texto placeholder más oscuro */
+}
+
+.send-button {
+  background-color: #007bff; /* Azul intenso */
+  border: none;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.send-button:hover {
+  background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+}
+
+/* Mejor contraste para los mensajes */
+.message-bubble {
+  max-width: 70%;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  word-wrap: break-word;
+  color: #000; /* Texto negro para alta visibilidad */
+}
+
+.outgoing-message {
+  align-self: flex-end;
+  background-color: #cfe9ff; /* Azul claro para mensajes salientes */
+  border: 1px solid #007bff; /* Borde azul para mayor definición */
+}
+
+.incoming-message {
+  align-self: flex-start;
+  background-color: #e0ffe0; /* Verde claro para mensajes entrantes */
+  border: 1px solid #28a745; /* Borde verde para mayor definición */
+}
+
+.message-text {
+  margin: 0;
+}
+
+.message-info {
+  margin: 0;
+  font-size: 12px;
+  text-align: right;
+  color: #555; /* Color más oscuro para información */
+}
+
+.message-status {
+  font-style: italic;
+  color: #777; /* Estado con mayor visibilidad */
+}

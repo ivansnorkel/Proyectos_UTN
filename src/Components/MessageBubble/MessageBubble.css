@@ -1,0 +1,32 @@
+.message-bubble {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    word-wrap: break-word;
+  }
+  
+  .outgoing-message {
+    align-self: flex-end;
+    background-color: #dcf8c6;
+  }
+  
+  .incoming-message {
+    align-self: flex-start;
+    background-color: #ffffff;
+  }
+  
+  .message-text {
+    margin: 0;
+  }
+  
+  .message-info {
+    margin: 0;
+    font-size: 12px;
+    text-align: right;
+  }
+  
+  .message-status {
+    font-style: italic;
+  }
+  
